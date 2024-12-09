@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "name",
+  "id": "examplemod",
   "version": "${version}",
 
   "name": "name",
@@ -19,20 +19,20 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "deus.name.ExampleMod"
+      "deus.examplemod.ExampleMod"
     ],
 		"beforeGameStart": [
-          "deus.name.ExampleMod"
+          "deus.examplemod.ExampleMod"
 		],
 		"afterGameStart": [
-          "deus.name.ExampleMod"
+          "deus.examplemod.ExampleMod"
 		],
 		"recipesReady": [
-          "deus.name.ExampleMod"
+          "deus.examplemod.ExampleMod"
 		]
 	},
   "mixins": [
-		"name.mixins.json"
+    "examplemod.mixins.json"
   ],
 
   "depends": {
