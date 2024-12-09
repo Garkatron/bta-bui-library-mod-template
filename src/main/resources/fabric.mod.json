@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "name",
+  "version": "${version}",
+
+  "name": "name",
+  "description": "This mod aims to help new BTA modders.",
+  "authors": [
+    "@Garkatron"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+	"icon": "icon.png",
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "deus.name.ExampleMod"
+    ],
+		"beforeGameStart": [
+          "deus.name.ExampleMod"
+		],
+		"afterGameStart": [
+          "deus.name.ExampleMod"
+		],
+		"recipesReady": [
+          "deus.name.ExampleMod"
+		]
+	},
+  "mixins": [
+		"name.mixins.json"
+  ],
+
+  "depends": {
+		"minecraft": "^7.2-beta",
+    "fabricloader": ">=0.15.5"
+  },
+  "suggests": {
+  }
+}
