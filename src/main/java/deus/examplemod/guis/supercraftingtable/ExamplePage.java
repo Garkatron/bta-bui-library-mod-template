@@ -9,9 +9,8 @@ public class ExamplePage extends Page {
 	public ExamplePage(Router router, String... text) {
 		super(router);
 
-		styleSheetPath = "/assets/"+ ExampleMod.MOD_ID +"/assets/guis/ExampleBlockGui/test.yaml";
-		xmlPath = "/assets/"+ ExampleMod.MOD_ID +"/assets/guis/ExampleBlockGui/test.xml";
-
+		styleSheetPath = "/assets/"+ ExampleMod.MOD_ID +"/guis/ExampleBlockGui/test.yaml";
+		xmlPath = "/assets/"+ ExampleMod.MOD_ID +"/guis/ExampleBlockGui/test.xml";
 		// XMLProcessor.printChildNodes(XMLProcessor.parseXML(xmlPath),"-",0);
 
 		// ! DON'T DELETE IT
