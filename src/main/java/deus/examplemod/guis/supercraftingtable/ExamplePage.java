@@ -7,7 +7,7 @@ import deus.guilib.guimanagement.routing.Router;
 public class ExamplePage extends Page {
 
 	public ExamplePage(Router router, String... text) {
-		super(router);
+		super(ExampleMod.class, router);
 
 		styleSheetPath = "/assets/"+ ExampleMod.MOD_ID +"/guis/ExampleBlockGui/test.yaml";
 		xmlPath = "/assets/"+ ExampleMod.MOD_ID +"/guis/ExampleBlockGui/test.xml";
