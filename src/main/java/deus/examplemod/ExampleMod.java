@@ -1,5 +1,6 @@
 package deus.examplemod;
 
+import deus.examplemod.block.ExamplemodBlocks;
 import deus.examplemod.item.ExamplemodItems;
 import deus.examplemod.util.configuration.ConfigHandler;
 import net.fabricmc.api.ModInitializer;
@@ -16,8 +17,9 @@ public class ExampleMod implements ModInitializer, GameStartEntrypoint, RecipeEn
 
 	@Override
     public void onInitialize() {
-        LOGGER.info("{} initialized.", MOD_ID);
+        LOGGER.info("{} initialized.", ExampleMod.MOD_ID);
 		ExamplemodItems.initialize();
+		ExamplemodBlocks.initialize();
     }
 
 	@Override

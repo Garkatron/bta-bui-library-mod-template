@@ -1,5 +1,6 @@
 package deus.examplemod.block;
 
+import deus.examplemod.ExampleMod;
 import deus.examplemod.guis.supercraftingtable.ExampleBlock;
 import net.minecraft.core.block.material.Material;
 import net.minecraft.core.block.tag.BlockTags;
@@ -15,7 +16,7 @@ public class ExamplemodBlocks {
 
 	public static ExampleBlock exampleBlock;
 
-	public void initialize() {
+	public static void initialize() {
 
 		BlockBuilder stoneBlockBuilder = genericBlockBuilder
 			.setBlockSound(BlockSounds.STONE)
@@ -23,21 +24,18 @@ public class ExamplemodBlocks {
 			.setTags(BlockTags.MINEABLE_BY_PICKAXE)
 			;
 
-		BlockBuilder logBlockBuilder = genericBlockBuilder
+		BlockBuilder exampleBlockBuilder = genericBlockBuilder
 			.setBlockSound(BlockSounds.WOOD)
 			.setBlockSound(new BlockSound("step.wood", "step.wood", 1.0f, 1.0f))
 			.setTags(BlockTags.MINEABLE_BY_AXE)
 			;
 
 		exampleBlock = make(
-			logBlockBuilder
+			exampleBlockBuilder
 				.setTextures("examplemod:block/block_log_pile_side")
 				.setTopBottomTextures("examplemod:block/block_log_pile"),
-			new ExampleBlock("block.log.pile",config.newBlockID(), Material.wood)
+			new ExampleBlock("block.log.pile", ExampleMod.MOD_CONFIG.newBlockID(), Material.wood)
 		);
-		System.out.println(exampleBlock.id);
-
-
 	}
 
 

@@ -1,5 +1,6 @@
 package deus.examplemod.guis.supercraftingtable;
 
+import deus.examplemod.ExampleMod;
 import deus.guilib.guimanagement.routing.Page;
 import deus.guilib.guimanagement.routing.Router;
 
@@ -8,8 +9,8 @@ public class ExamplePage extends Page {
 	public ExamplePage(Router router, String... text) {
 		super(router);
 
-		styleSheetPath = "/assets/guilib/xml/test.yaml";
-		xmlPath = "/assets/guilib/xml/test.xml";
+		styleSheetPath = "/assets/"+ ExampleMod.MOD_ID +"/assets/guis/ExampleBlockGui/test.yaml";
+		xmlPath = "/assets/"+ ExampleMod.MOD_ID +"/assets/guis/ExampleBlockGui/test.xml";
 
 		// XMLProcessor.printChildNodes(XMLProcessor.parseXML(xmlPath),"-",0);
 

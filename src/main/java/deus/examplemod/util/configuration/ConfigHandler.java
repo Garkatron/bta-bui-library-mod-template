@@ -1,5 +1,6 @@
 package deus.examplemod.util.configuration;
 
+import deus.examplemod.ExampleMod;
 import turniplabs.halplibe.util.TomlConfigHandler;
 import turniplabs.halplibe.util.toml.Toml;
 
@@ -17,16 +18,16 @@ public class ConfigHandler {
 	private static final TomlConfigHandler config;
 
 	static {
-		Toml toml = new Toml(MOD_ID.toUpperCase(Locale.ROOT));
+		Toml toml = new Toml(ExampleMod.MOD_ID.toUpperCase(Locale.ROOT));
 
 		toml.addCategory("IDs")
-			.addEntry("startBlockId", 12000)
-			.addEntry("startItemId", 11000);
+			.addEntry("startBlockId", 14000)
+			.addEntry("startItemId", 13000);
 
 		toml.addCategory("debug")
 			.addEntry("activated", false);
 
-		config = new TomlConfigHandler(null, MOD_ID, toml);
+		config = new TomlConfigHandler(null, ExampleMod.MOD_ID, toml);
 	}
 
 	public ConfigHandler() {
