@@ -11,7 +11,7 @@ import static deus.guilib.GuiLib.config;
 import static deus.guilib.util.blockanditems.BlockMaker.genericBlockBuilder;
 import static deus.guilib.util.blockanditems.BlockMaker.make;
 
-public class TestBlocks {
+public class ExamplemodBlocks {
 
 	public static ExampleBlock exampleBlock;
 
@@ -28,17 +28,6 @@ public class TestBlocks {
 			.setBlockSound(new BlockSound("step.wood", "step.wood", 1.0f, 1.0f))
 			.setTags(BlockTags.MINEABLE_BY_AXE)
 			;
-
-		//
-
-//		List<Block> blocks = make(
-//			logBlockBuilder,
-//			new Block("block.log.oak", config.newBlockID(), Material.wood),
-//			new Block("block.log.birch", config.newBlockID(), Material.wood)
-//		);
-//
-//		logOak = blocks.get(0);
-//		logBirch = blocks.get(1);
 
 		exampleBlock = make(
 			logBlockBuilder
