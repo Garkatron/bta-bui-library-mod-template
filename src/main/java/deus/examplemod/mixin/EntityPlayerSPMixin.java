@@ -3,7 +3,7 @@ package deus.examplemod.mixin;
 
 import deus.examplemod.guis.interfaces.mixin.IEntityPlayer;
 import deus.examplemod.guis.supercraftingtable.ExampleBlockTileEntity;
-import deus.guilib.examples.exampleGui.ExampleGui;
+import deus.examplemod.guis.supercraftingtable.ExampleGui;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.player.EntityPlayerSP;
 import org.spongepowered.asm.mixin.Mixin;
