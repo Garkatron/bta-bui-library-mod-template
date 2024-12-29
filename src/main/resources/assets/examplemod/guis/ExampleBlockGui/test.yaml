@@ -3,10 +3,56 @@
 SharedProperties:
   backgroundColor: "#FFFFFF"
 
-Select:
-  - at: "Panel"
-    panelLengthY: 20
-    panelLengthX: 20
+Textures:
+  - id: myBackground
+    path: "/assets"
+    width: 20
+    height: 20
+    mode: STRETCH
 
+  - id: myBackground2
+    path: "/assets"
+    width: 20
+    height: 20
+    mode: STRETCH
+
+Select:
+  - at: $id
+    backgroundImage: myBackground
+
+  - at: .group
+    backgroundImage: myBackground2
+
+  - at: tag
+    backgroundImage: transparent
+    backgroundColor: "0x000000"
+
+  - at: commonAncestor ( childrenTag
+    backgroundColor: "#000000"
+
+  - at: directParent > childrenTag
+    backgroundImage: transparent
+    backgroundColor: "000000"
+
+  - at: "example"
+    backgroundImage: transparent
+    backgroundColor: transparent
+    height: 20px
+    width: 20px
+    bgHeight: 2px
+    bgWidth: 2px
+    border: 1px 000000
+    localY: 0
+    localX: 0
+    textShadow: false
+    selfPlacement: TOP
+    scrollBarVisible: false
+    layoutSpacing: 2px
+    childrenPlacement: TOP
+    layoutCenterItems: false
+    backgroundImageHover: transparent
+    textColor: "000000"
+    overflow: hide
+    # And more
 
 

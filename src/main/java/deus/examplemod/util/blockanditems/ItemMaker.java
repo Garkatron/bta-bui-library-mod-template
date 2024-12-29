@@ -1,5 +1,6 @@
 package deus.examplemod.util.blockanditems;
 
+import deus.examplemod.ExampleMod;
 import net.minecraft.core.item.Item;
 import turniplabs.halplibe.helper.CreativeHelper;
 import turniplabs.halplibe.helper.ItemBuilder;
@@ -8,10 +9,8 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
-import static deus.guilib.GuiLib.MOD_ID;
-
 public class ItemMaker {
-	public static ItemBuilder genericItemBuilder = new ItemBuilder(MOD_ID);
+	public static ItemBuilder genericItemBuilder = new ItemBuilder(ExampleMod.MOD_ID);
 
 	public static <T extends Item> T make(ItemBuilder builder, T item) {
 		return builder.build(item);

@@ -1,8 +1,8 @@
 package deus.examplemod.guis.supercraftingtable;
 
 
-import deus.guilib.interfaces.IPage;
-import deus.guilib.guimanagement.AdvancedContainer;
+import deus.builib.interfaces.IPage;
+import deus.builib.guimanagement.AdvancedContainer;
 import net.minecraft.core.entity.player.EntityPlayer;
 import net.minecraft.core.player.inventory.IInventory;
 

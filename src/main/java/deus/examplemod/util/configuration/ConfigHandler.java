@@ -4,11 +4,8 @@ import deus.examplemod.ExampleMod;
 import turniplabs.halplibe.util.TomlConfigHandler;
 import turniplabs.halplibe.util.toml.Toml;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.Locale;
 
-import static deus.guilib.GuiLib.MOD_ID;
 
 public class ConfigHandler {
 

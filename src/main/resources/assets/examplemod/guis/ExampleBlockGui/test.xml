@@ -1,7 +1,15 @@
-<root xmlns="GUI-LIBRARY-HTML-SCHEMA">
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<root xmlns="GUI-LIBRARY-HTML-SCHEMA" version="1.0">
+
+    <!--
+    Link one or more yaml styles
+    <link src="/assets"/>
+    -->
+
     <body>
-        <panel>
-            <label>tatatat</label>
-        </panel>
+        <div>
+            <label>Hello World!</label>
+        </div>
     </body>
 </root>

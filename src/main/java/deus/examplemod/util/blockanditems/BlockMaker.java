@@ -6,7 +6,7 @@ import turniplabs.halplibe.helper.BlockBuilder;
 import java.util.ArrayList;
 import java.util.List;
 
-import static deus.guilib.GuiLib.MOD_ID;
+import static deus.builib.GuiLib.MOD_ID;
 
 
 
