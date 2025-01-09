@@ -1,4 +1,7 @@
 # SCHEMA: https://raw.githubusercontent.com/Garkatron/BTA-GuiLibrary/7.2/src/main/resources/assets/guilib/yaml/style_schema.json
+# Click on the bottom right where it says 'schema.'
+# Click on 'edit schema mappings,'
+# add a new one with the URL above, and apply it to this YAML."
 
 SharedProperties:
   backgroundColor: "#FFFFFF"
